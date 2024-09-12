@@ -1,0 +1,38 @@
+{
+  "redis": "127.0.0.1:6379",
+  "mysql": {
+    "host":"127.0.0.1",
+    "user":"root",
+    "password":"123456",
+    "port":3306,
+    "db":"xorderbook_dev"
+  },
+  "market": [
+    {
+      "market": "BTC-USDT",
+      "exchangeAddress": "erd1qqqqqqqqqqqqqpgqx23lca0gfkvnnqclfseasq0pdctfxst4ymtsjsedkm",
+      "baseSymbol": "BTC",
+      "quoteSymbol": "USDT",
+      "baseESDT": "BTC-187d25",
+      "quoteESDT": "USDT-cf0380"
+    },
+    {
+      "market": "ETH-USDT",
+      "exchangeAddress": "erd1qqqqqqqqqqqqqpgqp9szauyjdfdx8qgwn22h3sv4p3tznz6vymtsgq9s09",
+      "baseSymbol": "ETH",
+      "quoteSymbol": "USDT",
+      "baseESDT": "ETH-dd05ee",
+      "quoteESDT": "USDT-cf0380"
+    }
+  ],
+  "eventNotifier": {
+    "connection": "amqp://user-ed75591e:31ecb12f79c6836df57fd88331cc81c15569c6297ee4fa5479252a4f3c332cee@devnet-rabbitmq.beaconx.app:5672/",
+    "eventId": "events-ed75591e",
+    "websocket": "142.171.139.187:5000"
+  },
+  "launcher": {
+    "gateway": "https://devnet-gateway.multiversx.com",
+    "explorer": "https://devnet-explorer.multiversx.com/transactions/",
+    "walletPem": "./wallet-owner.pem"
+  }
+}

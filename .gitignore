@@ -1,0 +1,6 @@
+*.log
+node_modules
+*-lock.json
+*.exe
+*.log.*
+*.zip

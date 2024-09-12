@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .group:hover .group-hover\:block {
+    display: block;
+    text-decoration: underline;
+  }
+}
+
+.mx-transactions>td {
+  @apply p-2;
+}
+
+.mx-transactions td>span,
+.mx-transactions td>div {
+  @apply flex w-max;
+}
+
+.mx-transactions td>div>a {
+  @apply text-blue-600;
+}
+
+
+/* ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3E3D40;
+}
+
+::-moz-scrollbar {
+  width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #3E3D40;
+} */
+
+
+
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #525353 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #161616 0%, #2c2c2c 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(29, 28, 28, 0.6);
+  filter: blur(750px);
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(-168.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: #171717;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width:10px;
+    -webkit-appearance: none;
+    height:20px;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -550px 0 0 550px #21F7DC;
+  }
+}

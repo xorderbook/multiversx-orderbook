@@ -1,0 +1,1 @@
+scp clean  root@142.171.139.187:/home/engine/tools
